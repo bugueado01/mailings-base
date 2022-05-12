@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <title></title>
+    <!--[if mso]>
+      <noscript>
+        <xml>
+          <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml>
+      </noscript>
+    <![endif]-->
+    <style>
+
+      .table-container{
+        width: 800px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        text-align: left;
+      }
+
+      .table-inner-container{
+        border-collapse:collapse; 
+        border:0; 
+        border-spacing:0;
+      }
+
+      .tr-banner-container{
+        width: 100%; 
+        height: 100%; 
+        background-color: #8e56a2;
+      }
+
+      .td-banner-container{
+        width: 100%;
+      }
+
+      .tr-welcome-text-container{
+        background-color: #8e56a2;
+      }
+
+      .td-welcome-text-container{
+        padding: 0 30px;
+      }
+
+      .p-welcome-text{
+        color: #fff;
+        font-size: 16.5px;
+        text-align: justify;
+        font-weight: bold;
+      }
+
+      .td-description-text-container{
+        padding: 0 30px;
+      }
+
+      .p-description-text{
+        font-size: 16.5px; 
+        color: #395a6b;
+      }
+
+      .span-violet-bold-text{
+        color: #8e56a2; 
+        font-weight: bold
+      }
+
+      .tr-cards-container{
+        display: flex; 
+        width: 100%;
+        flex-direction: row;
+      }
+
+      .td-card-container{
+        width: 100%;
+        padding: 0;
+      }
+
+      .background-yellow{
+        background-color: #ffcf00;
+      }
+
+      .h2-card-title{
+        color: #ffffff; 
+        text-align: center; 
+        font-weight: bold; 
+        font-size: 20px;
+      }
+
+      .td-inner-card-container{
+        padding: 0 20px;
+      }
+
+      .p-card-inner-text{
+        font-size: 13px;
+        text-align: justify;
+        color: #395a6b;
+      }
+
+      .h2-bodeguita-title{
+        color: #ffffff; 
+        text-align: left; 
+        font-weight: bold; 
+        padding: 0 20px;
+      }
+
+      .p-card-bodeguita-text{
+        font-size: 13px; 
+        text-align: justify; 
+        padding: 0 20px; color: #395a6b;
+      }
+
+      .span-text-bold-white{
+        color: #ffffff;
+      }
+
+      .td-card-orange-container{
+        background-color: #ff7a0d;  
+        display: flex;
+        justify-content: center; 
+        align-items: center
+      }
+
+      .p-card-orange-container-text{
+        font-size: 20px; 
+        text-align: left; 
+        color: #ffffff; 
+        font-weight: bold; 
+        padding: 0 30px 0 20px;
+      }
+
+      .tr-logos-container{
+        display: flex; 
+        width: 100%; 
+        flex-direction: row;
+      }
+
+      .tr-blue-logos-container{
+        height: 180px;
+        padding: 0;
+      }
+
+      .td-blue-text-container{
+        width: 50%; 
+        background-color: #0097d7; 
+        height: 180px;
+      }
+
+      .blue-text{
+        font-size: 11px;
+        color: #ffffff;
+        padding: 0 30px;
+        text-align: center;
+        margin: 0;
+      }
+
+      .span-white-bold-text{
+        font-size: 20px; 
+        font-weight: bold;
+      }
+
+      .grey-image-container{
+        width: 50%; 
+        background-color: #e9e9e9;
+        height: 180px;
+      }
+
+      .green-text{
+        font-size: 20px;
+        text-align: center;
+        padding: 0 30px;
+        color: #54b936;
+        font-weight: bold;
+      }
+
+      .final-images-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .final-images{
+        width:"50%";
+      }
+
+      .final-green-area{
+        display: flex; 
+        background-color: #54b936;
+        flex-direction: row;
+      }
+
+      .final-text-container{
+        display: flex; 
+        align-items: center;
+      }
+
+      .final-text{
+        color: #ffffff;
+        font-size: 14px;
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      .social-media-container{
+        display: flex; 
+        justify-content: center; 
+        flex-direction: row;
+        padding: 0 20%;
+      }
+
+      
+      .section-responsive{
+        display: none;
+      }
+
+
+      .section-no-responsive{
+        display: block;
+      }
+
+      
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      @media (max-width: 426px) {
+
+      .section-responsive{
+        display: block;
+      }
+
+      .section-no-responsive{
+        display: none;
+      }
+
+      .table-container{
+        width: 100%;
+      }
+
+      .td-welcome-text-container{
+        padding: 0 10px;
+      }
+
+      .p-welcome-text{
+        font-size: 11px;
+      }
+
+      .p-description-text{
+        font-size: 0.8rem;
+      }
+
+      .h2-bodeguita-title{
+        text-align: center;
+      }
+
+      .tr-logos-container{
+        flex-direction: column;
+        
+      }
+
+      .tr-blue-logos-container{
+        background-color: #E9E9E9!important;
+      }
+
+      .blue-text{
+        padding:0 10px;
+      }
+
+      .social-media-container{
+        padding: 0;
+      }
+
+      .image-responsive-container{
+        height: 180px!important;
+      }
+      
+    }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body style="margin: 0; padding: 0; font-family: 'Poppins', 'Arial', sans-serif;">
+    <table role="presentation" class="table-container section-no-responsive" align="center">
+      <tr class="tr-banner-container">
+        <td class="td-banner-container">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_01.png?raw=true" alt="" width="100%"/>
+        </td>
+      </tr>
+      <tr class="tr-banner-container">
+        <td class="td-banner-container">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_02.png?raw=true" alt="" width="100%"/>
+        </td>
+      </tr>
+            
+      <tr class="tr-welcome-text-container">
+        <td class="td-welcome-text-container">
+          <p class="p-welcome-text">
+            Bienvenidos a este espacio en el que compartimos nuestras principales noticias e iniciativas alineadas a nuestro enfoque de promover el desarrollo de un mundo mejor.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="td-description-text-container">
+          <p class="p-description-text">
+            Somos el embotellador exclusivo de PepsiCo en el país y desde 2021 <span class="span-violet-bold-text">somos una empresa multiportafolio</span> que también ofrece al público productos de la canasta básica familiar.
+          </p>
+          <p class="p-description-text">
+            Desde nuestra llegada al Perú, estamos enfocados en generar valor compartido con base en el core de nuestro negocio. Así, nacen dos de nuestras iniciativas: <span class="span-violet-bold-text">Mi Tienda Segura,</span> programa enfocado en capacitar y ayudar a bodegueros con sus respectivos negocios, y <span class="span-violet-bold-text">Botellas Que Empoderan,</span> orientado a convertir nuestras botellas en insumos parala elaboración de artículos de moda sostenible, y así brindar herramientas para que mujeres en situación de vulnerabilidad puedan cambiar círculos de pobreza por círculos de prosperidad.
+          </p>
+        </td>
+      </tr>
+
+      <tr class="tr-cards-container">
+        <td class="td-card-container">
+          <table class="table-inner-container">
+            <tr>
+              <td class="background-yellow">
+                <h2 class="h2-card-title">¡Juntos logramos más!</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-inner-card-container">
+                <p class="p-card-inner-text">
+                  Este año nos sumamos al proyecto Comedores Cálidda 2.0. Nuestra participación se enfoca en el eje de cuidado ambiental donde aportaremos con transferencia de conocimiento en reciclaje y entrega de contenedores para la recolección de botellas de plástico. De esta manera, las mujeres que dirigen los comedores contarán con herramientas para obtener más ingresos y convertirse en lideresas ambientales.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="td-card-container">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_05.png?raw=true" alt="" width="100%" height="100%" />
+        </td>
+      </tr>
+
+      <tr class="tr-cards-container">
+        <td class="td-card-container">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_06.png?raw=true" alt="" width="100%" height="100%"/>
+        </td>
+        <td class="td-card-container background-yellow">
+          <h2 class="h2-bodeguita-title">La Bodeguita</h2>
+          <p class="p-card-inner-text p-card-bodeguita-text" >
+            El canal tradicional es uno de los más representativos en el Perú y, en honor a él, <span class="span-text-bold-white" >lanzamos La Bodeguita</span>, marca propia que busca llevar productos de la canasta básica familiar a precios competitivos. Así, buscamos un mayor margen de ganancia para los bodegueros y revaloramos <span class="span-text-bold-white">su labor</span> en el desarrollo de la economía de las familias peruanas.
+          </p>
+        </td>
+      </tr>
+
+      <tr class="tr-cards-container">
+        <td class="td-card-container">
+          <table class="table-inner-container">
+            <tr>
+              <td class="background-yellow">
+                <h2 class="h2-card-title">Botellas Que Empoderan</h2>
+              </td>
+            </tr>
+            <tr>
+              <td class="td-inner-card-container">
+                <p class="p-card-inner-text">
+                  ¡Nos unimos a Khana y a Pepsico para contribuir con un mundo mejor! Desde 2019 hemos capacitado a más de 500 mujeres de Ayacucho, Lima y Piura para generar negocios sustentables a través de la transformación de botellas de Pepsi, 7Up y Concordia en hilos que son destinados al bordado y la confección de artículos de moda sostenible. Este esfuerzo ha sido reconocido con el Premio Igualitario de Scotiabank en la categoría Excelencia Igualitaria Nueva Normalidad.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="td-card-container">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_09.jpg?raw=true" alt="" width="100%" height="100%" />
+        </td>
+      </tr>
+
+      <tr class="tr-cards-container">
+        <td class="td-card-container">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_10.png?raw=true" alt="" width="100%" height="100%" />
+        </td>
+
+        <td class="td-card-container td-card-orange-container" >
+          <p class="p-card-orange-container-text">
+            Contribuimos al <br> cumplimiento de los Objetivos de Desarrollo Sostenible 2030 a través de nuestras iniciativas:
+          </p>
+        </td>
+      </tr>
+
+
+      <tr class="tr-logos-container">
+        <td class="td-card-container">
+          <table class="table-inner-container">
+            <tr class="tr-blue-logos-container">
+              <td class="td-blue-text-container">
+                <p class="blue-text">
+                  Contribuimos a la recuperación de <br> <span class="span-white-bold-text">+ 17.7 km</span><br> de amunas, técnica que permite la recuperación y conservación del agua en San Pedro de Casta, Lima.
+                </p>
+              </td>
+              <td class="grey-image-container">
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_13.png?raw=true" alt="" width="100%" height="100%"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td class="td-card-container">
+          <table style="border-collapse:collapse; border:0;border-spacing:0;">
+            <tr class="tr-blue-logos-container">
+              <td class="td-blue-text-container">
+                <p class="blue-text">
+                  <span class="span-white-bold-text">+ de 49,000</span> especies nativas y <br><span class="span-white-bold-text">135,000 plantones</span> reforestados en la cuenca del río Chira, en Piura.
+                </p>
+              </td>
+              <td class="grey-image-container">
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_15.png?raw=true" alt="" width="100%" height="100%"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+   <tr class="tr-logos-container">
+        <td class="td-card-container">
+          <table style="border-collapse:collapse; border:0;border-spacing:0;">
+            <tr class="tr-blue-logos-container">
+              <td class="td-blue-text-container">
+                <p class="blue-text">
+                  <span class="span-white-bold-text">+ de 12,000</span> bodegueras y bodegueros incrementaron sus ventas en 20% 
+                </p>
+              </td>
+              <td class="grey-image-container">
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_16.png?raw=true" alt="" width="100%" height="100%"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      <td class="td-card-container">
+          <table style="border-collapse:collapse; border:0;border-spacing:0;">
+            <tr class="tr-blue-logos-container">
+              <td class="td-blue-text-container">
+                <p class="blue-text">
+                  <span class="span-white-bold-text">+ de 500</span> <br> mujeres han reactivado su economía bajo un enfoque de género que permite reciclar plástico y transformarlo en artículos de moda sostenible.
+                </p>
+              </td>
+              <td class="grey-image-container">
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_18.png?raw=true" alt="" width="100%"height="100%"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table role="presentation" style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0; background-color: #ffffff;">
+            <tr>
+              <td>
+                <p class="green-text">
+                  Nuestras iniciativas han sido reconocidas a nivel nacional por el compromiso de generar valor compartido para las comunidades en las que nos desarrollamos.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="final-images-container">
+        <td class="final-image">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_21.png?raw=true" alt=""  width="100%"/>
+        </td>
+        <td class="final-image">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_22.png?raw=true" alt="" width="100%"  />
+        </td>
+        <td class="final-image">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_23.png?raw=true" alt="" width="100%"  />
+        </td>
+        <td class="final-image">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_24.png?raw=true" alt="" width="100%"  />
+        </td>
+      </tr>
+
+      <tr class="final-green-area">
+        <td class="final-text-container">
+          <p class="final-text" >
+            Ocupamos el <span style="font-weight: bold;">5to puesto</span> en la categoría de bebidas y subimos <span style="font-weight: bold;">3 posiciones</span> en el ranking Merco respecto al año anterior.
+          </p>
+        </td>
+        <td class="final-text-container">
+          <p class="final-text" >
+            Ganadores de la categoría <span style="font-weight: bold;">”Nueva Normalidad”</span> con el programa Botellas Que Empoderan.
+          </p>
+        </td>
+        <td class="final-text-container">
+          <p class="final-text" >
+            Somos parte de las <span style="font-weight: bold;">21 Empresas Que Transforman por la generación de valor compartido</span>, gracias a nuestra iniciativa “Mi Tienda Segura”
+          </p>
+        </td>
+        <td class="final-text-container">
+          <p class="final-text" >
+            Somos la <span style="font-weight: bold;">única embotelladora del Perú</span> que cuenta con <span style="font-weight: bold;">3 estrellas del MINAN</span> por calcular, verificar y reducir nuestra huella de carbono.
+          </p>
+        </td>
+      </tr>
+
+      <tr class="social-media-container">
+        <td>
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_27.png?raw=true" alt="" width="100%" />
+        </td>
+        <td>
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_28.png?raw=true" alt="" width="100%" />
+        </td>
+        <td>
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_29.png?raw=true" alt="" width="100%" />
+        </td>
+      </tr>
+
+    </table>
+
+
+    <table role="presentation" class="table-container section-responsive" align="center">
+      <tr class="tr-banner-container">
+        <td class="td-banner-container">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_01.png?raw=true" alt="" width="100%"/>
+        </td>
+      </tr>
+      <tr class="tr-banner-container">
+        <td class="td-banner-container">
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_02.png?raw=true" alt="" width="100%"/>
+        </td>
+      </tr>
+
+      <tr class="tr-welcome-text-container">
+        <td class="td-welcome-text-container">
+          <p class="p-welcome-text">
+            Bienvenidos a este espacio en el que compartimos nuestras principales noticias e iniciativas alineadas a nuestro enfoque de promover el desarrollo de un mundo mejor.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="td-description-text-container">
+          <p class="p-description-text">
+            Somos el embotellador exclusivo de PepsiCo en el país y desde 2021 <span class="span-violet-bold-text">somos una empresa multiportafolio</span> que también ofrece al público productos de la canasta básica familiar.
+          </p>
+          <p class="p-description-text">
+            Desde nuestra llegada al Perú, estamos enfocados en generar valor compartido con base en el core de nuestro negocio. Así, nacen dos de nuestras iniciativas: <span class="span-violet-bold-text">Mi Tienda Segura,</span> programa enfocado en capacitar y ayudar a bodegueros con sus respectivos negocios, y <span class="span-violet-bold-text">Botellas Que Empoderan,</span> orientado a convertir nuestras botellas en insumos parala elaboración de artículos de moda sostenible, y así brindar herramientas para que mujeres en situación de vulnerabilidad puedan cambiar círculos de pobreza por círculos de prosperidad.
+          </p>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <table class="table-inner-container">
+            <tr>
+              <td>
+                <table class="table-inner-container">
+                  <tr>
+                    <td class="background-yellow">
+                      <h2 class="h2-card-title">¡Juntos logramos más!</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-inner-card-container">
+                      <p class="p-card-inner-text">
+                        Este año nos sumamos al proyecto Comedores Cálidda 2.0. Nuestra participación se enfoca en el eje de cuidado ambiental donde aportaremos con transferencia de conocimiento en reciclaje y entrega de contenedores para la recolección de botellas de plástico. De esta manera, las mujeres que dirigen los comedores contarán con herramientas para obtener más ingresos y convertirse en lideresas ambientales.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-card-container image-responsive-container">
+                <img src="../new-assets/BOLETIN-C-responsive_05.png" alt="" width="100%" height="100%" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table class="table-inner-container">
+            <tr>
+              <td class="td-card-container background-yellow" >
+                <h2 class="h2-bodeguita-title">La Bodeguita</h2>
+                  <p class="p-card-inner-text" style="padding: 0 20px">
+                    El canal tradicional es uno de los más representativos en el Perú y, en honor a él, <span class="span-text-bold-white">lanzamos La Bodeguita</span>, marca propia que busca llevar productos de la canasta básica familiar a precios competitivos. Así, buscamos un mayor margen de ganancia para los bodegueros y revaloramos <span class="span-text-bold-white">su labor</span> en el desarrollo de la economía de las familias peruanas.
+                  </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-card-container image-responsive-container">
+                <img src="../new-assets/BOLETIN-C-responsive_06.png" alt="" width="100%" height="100%"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table class="table-inner-container">
+            <tr>
+              <td>
+                <table class="table-inner-container">
+                  <tr>
+                    <td class="background-yellow">
+                      <h2 class="h2-card-title">Botellas Que Empoderan</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-inner-card-container">
+                      <p class="p-card-inner-text">
+                        ¡Nos unimos a Khana y a Pepsico para contribuir con un mundo mejor! Desde 2019 hemos capacitado a más de 500 mujeres de Ayacucho, Lima y Piura para generar negocios sustentables a través de la transformación de botellas de Pepsi, 7Up y Concordia en hilos que son destinados al bordado y la confección de artículos de moda sostenible. Este esfuerzo ha sido reconocido con el Premio Igualitario de Scotiabank en la categoría Excelencia Igualitaria Nueva Normalidad.
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="td-card-container image-responsive-container">
+                <img src="../new-assets/BOLETIN-C-responsive_09.png" alt="" width="100%" height="100%" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table class="table-inner-container">
+            <tr>
+              <td class="td-card-container td-card-orange-container" >
+                <p class="p-card-orange-container-text">
+                  Contribuimos al <br> cumplimiento de los Objetivos de Desarrollo Sostenible 2030 a través de nuestras iniciativas:
+                </p>
+              </td>
+            </tr>
+                
+            <tr>
+              <td class="td-card-container image-responsive-container">
+                <img src="../new-assets/BOLETIN-C-responsive_10.png" alt="" width="100%" height="100%" />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="tr-logos-container">
+        <td class="td-card-container">
+          <table class="table-inner-container">
+            <tr class="tr-blue-logos-container">
+              <td class="td-blue-text-container">
+                <p class="blue-text">
+                  Contribuimos a la recuperación de <br> <span class="span-white-bold-text">+ 17.7 km</span><br> de amunas, técnica que permite la recuperación y conservación del agua en San Pedro de Casta, Lima.
+                </p>
+              </td>
+              <td class="grey-image-container">
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_13.png?raw=true" alt="" width="100%" height="100%"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+
+      <td class="td-card-container">
+          <table style="border-collapse:collapse; border:0;border-spacing:0;">
+            <tr class="tr-blue-logos-container">
+              <td class="td-blue-text-container">
+                <p class="blue-text">
+                  <span class="span-white-bold-text">+ de 49,000</span> especies nativas y <br><span class="span-white-bold-text">135,000 plantones</span> reforestados en la cuenca del río Chira, en Piura.
+                </p>
+              </td>
+              <td class="grey-image-container">
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_15.png?raw=true" alt="" width="100%" height="100%"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="tr-logos-container">
+        <td class="td-card-container">
+          <table style="border-collapse:collapse; border:0;border-spacing:0;">
+            <tr class="tr-blue-logos-container">
+              <td class="td-blue-text-container">
+                <p class="blue-text">
+                  <span class="span-white-bold-text">+ de 12,000</span> bodegueras y bodegueros incrementaron sus ventas en 20% 
+                </p>
+              </td>
+              <td class="grey-image-container">
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_16.png?raw=true" alt="" width="100%" height="100%"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="td-card-container">
+          <table style="border-collapse:collapse; border:0;border-spacing:0;">
+            <tr class="tr-blue-logos-container">
+              <td class="td-blue-text-container">
+                <p class="blue-text">
+                  <span class="span-white-bold-text">+ de 500</span> <br> mujeres han reactivado su economía bajo un enfoque de género que permite reciclar plástico y transformarlo en artículos de moda sostenible.
+                </p>
+              </td>
+              <td class="grey-image-container">
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_18.png?raw=true" alt="" width="100%"height="100%"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table role="presentation" style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0; background-color: #ffffff;">
+            <tr>
+              <td>
+                <p class="green-text">
+                  Nuestras iniciativas han sido reconocidas a nivel nacional por el compromiso de generar valor compartido para las comunidades en las que nos desarrollamos.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr style="background-color: #ffffff;">
+        <td>
+          <table role="presentation" style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0;">
+            <tr>
+              <td>
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_21.png?raw=true" alt=""  width="100%"/>
+              </td>
+              <td>
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_22.png?raw=true" alt="" width="100%"  />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table role="presentation" style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0;">
+            <tr>
+              <td>
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_23.png?raw=true" alt=""  width="100%"/>
+              </td>
+              <td>
+                <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_24.png?raw=true" alt="" width="100%"  />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>    
+
+      <tr>
+        <td>
+          <table role="presentation" style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0; background-color: #54b936;">
+            <tr>
+              <td>
+                <table role="presentation" style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0;">
+                  <tr class="final-green-area">
+                    <td class="final-text-container">
+                      <p class="final-text" >
+                        Ocupamos el <span style="font-weight: bold;">5to puesto</span> en la categoría de bebidas y subimos <span style="font-weight: bold;">3 posiciones</span> en el ranking Merco respecto al año anterior.
+                      </p>
+                    </td>
+                    <td class="final-text-container">
+                      <p class="final-text" >
+                        Ganadores de la categoría <span style="font-weight: bold;">”Nueva Normalidad”</span> con el programa Botellas Que Empoderan.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+      
+            <tr>
+              <td>
+                <table role="presentation" style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0;">
+                  <tr class="final-green-area">
+                    <td class="final-text-container">
+                      <p class="final-text" >
+                        Somos parte de las <span style="font-weight: bold;">21 Empresas Que Transforman por la generación de valor compartido</span>, gracias a nuestra iniciativa “Mi Tienda Segura”
+                      </p>
+                    </td>
+                    <td class="final-text-container">
+                      <p class="final-text" >
+                        Somos la <span style="font-weight: bold;">única embotelladora del Perú</span> que cuenta con <span style="font-weight: bold;">3 estrellas del MINAN</span> por calcular, verificar y reducir nuestra huella de carbono.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="social-media-container">
+        <td>
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_27.png?raw=true" alt="" width="100%" />
+        </td>
+        <td>
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_28.png?raw=true" alt="" width="100%" />
+        </td>
+        <td>
+          <img src="https://github.com/ferparrios/mailings-base/blob/main/new-assets/BOLETIN-C_29.png?raw=true" alt="" width="100%" />
+        </td>
+      </tr>
+
+    </table>
+  </body>
+</html>
